@@ -5,7 +5,7 @@ using UnityEngine;
 public class jump : MonoBehaviour
 {
     [SerializeField]
-    private Rigidbody a;
+    private Rigidbody g;
     private Vector3 force;
     [SerializeField]
     private KeyCode key;
@@ -23,7 +23,7 @@ public class jump : MonoBehaviour
         if (Input.GetKeyDown(key))
         {
             force.Set(0,b,0);
-            a.AddForce(force, ForceMode.Impulse);
+            g.AddForce(force, ForceMode.Impulse);
             
         }
         
